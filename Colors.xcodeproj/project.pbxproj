@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9831F9B219A7113900DF95BA /* soundfive.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9831F9AC19A7113900DF95BA /* soundfive.wav */; };
+		9831F9B319A7113900DF95BA /* soundfour.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9831F9AD19A7113900DF95BA /* soundfour.wav */; };
+		9831F9B419A7113900DF95BA /* soundone.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9831F9AE19A7113900DF95BA /* soundone.wav */; };
+		9831F9B519A7113900DF95BA /* soundsix.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9831F9AF19A7113900DF95BA /* soundsix.wav */; };
+		9831F9B619A7113900DF95BA /* soundthree.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9831F9B019A7113900DF95BA /* soundthree.wav */; };
+		9831F9B719A7113900DF95BA /* soundtwo.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9831F9B119A7113900DF95BA /* soundtwo.wav */; };
+		9831F9B919A711D000DF95BA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9831F9B819A711D000DF95BA /* AVFoundation.framework */; };
+		9831F9BB19A7120A00DF95BA /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9831F9BA19A7120A00DF95BA /* AudioToolbox.framework */; };
+		985A8EDD19C139D10083AF9E /* color@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 985A8EDC19C139D10083AF9E /* color@2x.png */; };
+		9863E71419A670FC008FD7AB /* medium.m in Sources */ = {isa = PBXBuildFile; fileRef = 9863E71319A670FC008FD7AB /* medium.m */; };
+		9863E71719A67104008FD7AB /* hard.m in Sources */ = {isa = PBXBuildFile; fileRef = 9863E71619A67104008FD7AB /* hard.m */; };
+		9863E71A19A6710E008FD7AB /* stealth.m in Sources */ = {isa = PBXBuildFile; fileRef = 9863E71919A6710E008FD7AB /* stealth.m */; };
+		9863E71D19A67122008FD7AB /* shuffle.m in Sources */ = {isa = PBXBuildFile; fileRef = 9863E71C19A67122008FD7AB /* shuffle.m */; };
+		9863E72019A6712D008FD7AB /* classic.m in Sources */ = {isa = PBXBuildFile; fileRef = 9863E71F19A6712D008FD7AB /* classic.m */; };
 		98866BB619A5ADDA00F54D4C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98866BB519A5ADDA00F54D4C /* Foundation.framework */; };
 		98866BB819A5ADDA00F54D4C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98866BB719A5ADDA00F54D4C /* CoreGraphics.framework */; };
 		98866BBA19A5ADDA00F54D4C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98866BB919A5ADDA00F54D4C /* UIKit.framework */; };
@@ -18,13 +32,19 @@
 		98866BCE19A5ADDA00F54D4C /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98866BCC19A5ADDA00F54D4C /* Main_iPad.storyboard */; };
 		98866BD119A5ADDA00F54D4C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98866BD019A5ADDA00F54D4C /* ViewController.m */; };
 		98866BD419A5ADDA00F54D4C /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 98866BD319A5ADDA00F54D4C /* MyScene.m */; };
-		98866BD619A5ADDA00F54D4C /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 98866BD519A5ADDA00F54D4C /* Spaceship.png */; };
 		98866BD819A5ADDA00F54D4C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98866BD719A5ADDA00F54D4C /* Images.xcassets */; };
 		98866BDF19A5ADDB00F54D4C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98866BDE19A5ADDB00F54D4C /* XCTest.framework */; };
 		98866BE019A5ADDB00F54D4C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98866BB519A5ADDA00F54D4C /* Foundation.framework */; };
 		98866BE119A5ADDB00F54D4C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98866BB919A5ADDA00F54D4C /* UIKit.framework */; };
 		98866BE919A5ADDB00F54D4C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 98866BE719A5ADDB00F54D4C /* InfoPlist.strings */; };
 		98866BEB19A5ADDB00F54D4C /* COLORSV2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 98866BEA19A5ADDB00F54D4C /* COLORSV2Tests.m */; };
+		98866BF519A5ADF400F54D4C /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98866BF419A5ADF400F54D4C /* iAd.framework */; };
+		98866BFA19A5AEBF00F54D4C /* squares.m in Sources */ = {isa = PBXBuildFile; fileRef = 98866BF919A5AEBF00F54D4C /* squares.m */; };
+		98866BFF19A5B01F00F54D4C /* TitleScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 98866BFE19A5B01F00F54D4C /* TitleScene.m */; };
+		98866C0219A5B09A00F54D4C /* settings.m in Sources */ = {isa = PBXBuildFile; fileRef = 98866C0119A5B09A00F54D4C /* settings.m */; };
+		98866C0519A5B0C800F54D4C /* highscore.m in Sources */ = {isa = PBXBuildFile; fileRef = 98866C0419A5B0C800F54D4C /* highscore.m */; };
+		98866C0819A5B0F600F54D4C /* levelselect.m in Sources */ = {isa = PBXBuildFile; fileRef = 98866C0719A5B0F600F54D4C /* levelselect.m */; };
+		98866C0C19A5B98C00F54D4C /* coloripad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98866C0B19A5B98C00F54D4C /* coloripad@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,15 +58,34 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		98866BB219A5ADDA00F54D4C /* COLORSV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = COLORSV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9831F9AC19A7113900DF95BA /* soundfive.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = soundfive.wav; path = ../../../Documents/soundfive.wav; sourceTree = "<group>"; };
+		9831F9AD19A7113900DF95BA /* soundfour.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = soundfour.wav; path = ../../../Documents/soundfour.wav; sourceTree = "<group>"; };
+		9831F9AE19A7113900DF95BA /* soundone.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = soundone.wav; path = ../../../Documents/soundone.wav; sourceTree = "<group>"; };
+		9831F9AF19A7113900DF95BA /* soundsix.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = soundsix.wav; path = ../../../Documents/soundsix.wav; sourceTree = "<group>"; };
+		9831F9B019A7113900DF95BA /* soundthree.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = soundthree.wav; path = ../../../Documents/soundthree.wav; sourceTree = "<group>"; };
+		9831F9B119A7113900DF95BA /* soundtwo.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = soundtwo.wav; path = ../../../Documents/soundtwo.wav; sourceTree = "<group>"; };
+		9831F9B819A711D000DF95BA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		9831F9BA19A7120A00DF95BA /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		985A8EDC19C139D10083AF9E /* color@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "color@2x.png"; sourceTree = "<group>"; };
+		9863E71219A670FC008FD7AB /* medium.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = medium.h; path = ../medium.h; sourceTree = "<group>"; };
+		9863E71319A670FC008FD7AB /* medium.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = medium.m; path = ../medium.m; sourceTree = "<group>"; };
+		9863E71519A67104008FD7AB /* hard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = hard.h; path = ../hard.h; sourceTree = "<group>"; };
+		9863E71619A67104008FD7AB /* hard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = hard.m; path = ../hard.m; sourceTree = "<group>"; };
+		9863E71819A6710E008FD7AB /* stealth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stealth.h; path = ../stealth.h; sourceTree = "<group>"; };
+		9863E71919A6710E008FD7AB /* stealth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = stealth.m; path = ../stealth.m; sourceTree = "<group>"; };
+		9863E71B19A67122008FD7AB /* shuffle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = shuffle.h; path = ../shuffle.h; sourceTree = "<group>"; };
+		9863E71C19A67122008FD7AB /* shuffle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = shuffle.m; path = ../shuffle.m; sourceTree = "<group>"; };
+		9863E71E19A6712C008FD7AB /* classic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = classic.h; path = ../classic.h; sourceTree = "<group>"; };
+		9863E71F19A6712D008FD7AB /* classic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = classic.m; path = ../classic.m; sourceTree = "<group>"; };
+		98866BB219A5ADDA00F54D4C /* Colors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Colors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98866BB519A5ADDA00F54D4C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		98866BB719A5ADDA00F54D4C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		98866BB919A5ADDA00F54D4C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		98866BBB19A5ADDA00F54D4C /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
-		98866BBF19A5ADDA00F54D4C /* COLORSV2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "COLORSV2-Info.plist"; sourceTree = "<group>"; };
+		98866BBF19A5ADDA00F54D4C /* Colors.temp_caseinsensitive_rename.temp_caseinsensitive_rename-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Colors.temp_caseinsensitive_rename.temp_caseinsensitive_rename-Info.plist"; sourceTree = "<group>"; };
 		98866BC119A5ADDA00F54D4C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		98866BC319A5ADDA00F54D4C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		98866BC519A5ADDA00F54D4C /* COLORSV2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "COLORSV2-Prefix.pch"; sourceTree = "<group>"; };
+		98866BC519A5ADDA00F54D4C /* Colors.temp_caseinsensitive_rename.temp_caseinsensitive_rename-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Colors.temp_caseinsensitive_rename.temp_caseinsensitive_rename-Prefix.pch"; sourceTree = "<group>"; };
 		98866BC619A5ADDA00F54D4C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		98866BC719A5ADDA00F54D4C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		98866BCA19A5ADDA00F54D4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
@@ -55,13 +94,24 @@
 		98866BD019A5ADDA00F54D4C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		98866BD219A5ADDA00F54D4C /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
 		98866BD319A5ADDA00F54D4C /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
-		98866BD519A5ADDA00F54D4C /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
 		98866BD719A5ADDA00F54D4C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		98866BDD19A5ADDB00F54D4C /* COLORSV2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = COLORSV2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		98866BDD19A5ADDB00F54D4C /* Colors.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Colors.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		98866BDE19A5ADDB00F54D4C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		98866BE619A5ADDB00F54D4C /* COLORSV2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "COLORSV2Tests-Info.plist"; sourceTree = "<group>"; };
+		98866BE619A5ADDB00F54D4C /* Colors.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Colors.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests-Info.plist"; sourceTree = "<group>"; };
 		98866BE819A5ADDB00F54D4C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		98866BEA19A5ADDB00F54D4C /* COLORSV2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = COLORSV2Tests.m; sourceTree = "<group>"; };
+		98866BF419A5ADF400F54D4C /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		98866BF819A5AEBF00F54D4C /* squares.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = squares.h; sourceTree = "<group>"; };
+		98866BF919A5AEBF00F54D4C /* squares.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = squares.m; sourceTree = "<group>"; };
+		98866BFD19A5B01F00F54D4C /* TitleScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleScene.h; sourceTree = "<group>"; };
+		98866BFE19A5B01F00F54D4C /* TitleScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleScene.m; sourceTree = "<group>"; };
+		98866C0019A5B09A00F54D4C /* settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = settings.h; sourceTree = "<group>"; };
+		98866C0119A5B09A00F54D4C /* settings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = settings.m; sourceTree = "<group>"; };
+		98866C0319A5B0C800F54D4C /* highscore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = highscore.h; sourceTree = "<group>"; };
+		98866C0419A5B0C800F54D4C /* highscore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = highscore.m; sourceTree = "<group>"; };
+		98866C0619A5B0F600F54D4C /* levelselect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = levelselect.h; sourceTree = "<group>"; };
+		98866C0719A5B0F600F54D4C /* levelselect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = levelselect.m; sourceTree = "<group>"; };
+		98866C0B19A5B98C00F54D4C /* coloripad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "coloripad@2x.png"; path = "../../../Documents/coloripad@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +119,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9831F9BB19A7120A00DF95BA /* AudioToolbox.framework in Frameworks */,
+				9831F9B919A711D000DF95BA /* AVFoundation.framework in Frameworks */,
+				98866BF519A5ADF400F54D4C /* iAd.framework in Frameworks */,
 				98866BB819A5ADDA00F54D4C /* CoreGraphics.framework in Frameworks */,
 				98866BBA19A5ADDA00F54D4C /* UIKit.framework in Frameworks */,
 				98866BBC19A5ADDA00F54D4C /* SpriteKit.framework in Frameworks */,
@@ -102,8 +155,8 @@
 		98866BB319A5ADDA00F54D4C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				98866BB219A5ADDA00F54D4C /* COLORSV2.app */,
-				98866BDD19A5ADDB00F54D4C /* COLORSV2Tests.xctest */,
+				98866BB219A5ADDA00F54D4C /* Colors.app */,
+				98866BDD19A5ADDB00F54D4C /* Colors.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -111,6 +164,9 @@
 		98866BB419A5ADDA00F54D4C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9831F9BA19A7120A00DF95BA /* AudioToolbox.framework */,
+				9831F9B819A711D000DF95BA /* AVFoundation.framework */,
+				98866BF419A5ADF400F54D4C /* iAd.framework */,
 				98866BB519A5ADDA00F54D4C /* Foundation.framework */,
 				98866BB719A5ADDA00F54D4C /* CoreGraphics.framework */,
 				98866BB919A5ADDA00F54D4C /* UIKit.framework */,
@@ -125,13 +181,10 @@
 			children = (
 				98866BC619A5ADDA00F54D4C /* AppDelegate.h */,
 				98866BC719A5ADDA00F54D4C /* AppDelegate.m */,
-				98866BC919A5ADDA00F54D4C /* Main_iPhone.storyboard */,
-				98866BCC19A5ADDA00F54D4C /* Main_iPad.storyboard */,
 				98866BCF19A5ADDA00F54D4C /* ViewController.h */,
 				98866BD019A5ADDA00F54D4C /* ViewController.m */,
-				98866BD219A5ADDA00F54D4C /* MyScene.h */,
-				98866BD319A5ADDA00F54D4C /* MyScene.m */,
-				98866BD519A5ADDA00F54D4C /* Spaceship.png */,
+				98866BF719A5AE6300F54D4C /* levels */,
+				98866BF619A5AE5200F54D4C /* Scenes */,
 				98866BD719A5ADDA00F54D4C /* Images.xcassets */,
 				98866BBE19A5ADDA00F54D4C /* Supporting Files */,
 			);
@@ -141,10 +194,22 @@
 		98866BBE19A5ADDA00F54D4C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				98866BBF19A5ADDA00F54D4C /* COLORSV2-Info.plist */,
+				98866C0B19A5B98C00F54D4C /* coloripad@2x.png */,
+				985A8EDC19C139D10083AF9E /* color@2x.png */,
+				98866BF819A5AEBF00F54D4C /* squares.h */,
+				98866BF919A5AEBF00F54D4C /* squares.m */,
+				9831F9AC19A7113900DF95BA /* soundfive.wav */,
+				9831F9AD19A7113900DF95BA /* soundfour.wav */,
+				9831F9AE19A7113900DF95BA /* soundone.wav */,
+				9831F9AF19A7113900DF95BA /* soundsix.wav */,
+				9831F9B019A7113900DF95BA /* soundthree.wav */,
+				9831F9B119A7113900DF95BA /* soundtwo.wav */,
+				98866BC919A5ADDA00F54D4C /* Main_iPhone.storyboard */,
+				98866BCC19A5ADDA00F54D4C /* Main_iPad.storyboard */,
+				98866BBF19A5ADDA00F54D4C /* Colors.temp_caseinsensitive_rename.temp_caseinsensitive_rename-Info.plist */,
 				98866BC019A5ADDA00F54D4C /* InfoPlist.strings */,
 				98866BC319A5ADDA00F54D4C /* main.m */,
-				98866BC519A5ADDA00F54D4C /* COLORSV2-Prefix.pch */,
+				98866BC519A5ADDA00F54D4C /* Colors.temp_caseinsensitive_rename.temp_caseinsensitive_rename-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -161,18 +226,52 @@
 		98866BE519A5ADDB00F54D4C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				98866BE619A5ADDB00F54D4C /* COLORSV2Tests-Info.plist */,
+				98866BE619A5ADDB00F54D4C /* Colors.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests-Info.plist */,
 				98866BE719A5ADDB00F54D4C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		98866BF619A5AE5200F54D4C /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				98866BFD19A5B01F00F54D4C /* TitleScene.h */,
+				98866BFE19A5B01F00F54D4C /* TitleScene.m */,
+				98866C0019A5B09A00F54D4C /* settings.h */,
+				98866C0119A5B09A00F54D4C /* settings.m */,
+				98866C0319A5B0C800F54D4C /* highscore.h */,
+				98866C0419A5B0C800F54D4C /* highscore.m */,
+				98866C0619A5B0F600F54D4C /* levelselect.h */,
+				98866C0719A5B0F600F54D4C /* levelselect.m */,
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
+		98866BF719A5AE6300F54D4C /* levels */ = {
+			isa = PBXGroup;
+			children = (
+				98866BD219A5ADDA00F54D4C /* MyScene.h */,
+				98866BD319A5ADDA00F54D4C /* MyScene.m */,
+				9863E71219A670FC008FD7AB /* medium.h */,
+				9863E71319A670FC008FD7AB /* medium.m */,
+				9863E71519A67104008FD7AB /* hard.h */,
+				9863E71619A67104008FD7AB /* hard.m */,
+				9863E71819A6710E008FD7AB /* stealth.h */,
+				9863E71919A6710E008FD7AB /* stealth.m */,
+				9863E71B19A67122008FD7AB /* shuffle.h */,
+				9863E71C19A67122008FD7AB /* shuffle.m */,
+				9863E71E19A6712C008FD7AB /* classic.h */,
+				9863E71F19A6712D008FD7AB /* classic.m */,
+			);
+			name = levels;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		98866BB119A5ADDA00F54D4C /* COLORSV2 */ = {
+		98866BB119A5ADDA00F54D4C /* Colors.temp_caseinsensitive_rename */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 98866BEE19A5ADDB00F54D4C /* Build configuration list for PBXNativeTarget "COLORSV2" */;
+			buildConfigurationList = 98866BEE19A5ADDB00F54D4C /* Build configuration list for PBXNativeTarget "Colors.temp_caseinsensitive_rename" */;
 			buildPhases = (
 				98866BAE19A5ADDA00F54D4C /* Sources */,
 				98866BAF19A5ADDA00F54D4C /* Frameworks */,
@@ -182,14 +281,14 @@
 			);
 			dependencies = (
 			);
-			name = COLORSV2;
+			name = Colors.temp_caseinsensitive_rename;
 			productName = COLORSV2;
-			productReference = 98866BB219A5ADDA00F54D4C /* COLORSV2.app */;
+			productReference = 98866BB219A5ADDA00F54D4C /* Colors.app */;
 			productType = "com.apple.product-type.application";
 		};
-		98866BDC19A5ADDB00F54D4C /* COLORSV2Tests */ = {
+		98866BDC19A5ADDB00F54D4C /* Colors.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 98866BF119A5ADDB00F54D4C /* Build configuration list for PBXNativeTarget "COLORSV2Tests" */;
+			buildConfigurationList = 98866BF119A5ADDB00F54D4C /* Build configuration list for PBXNativeTarget "Colors.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests" */;
 			buildPhases = (
 				98866BD919A5ADDB00F54D4C /* Sources */,
 				98866BDA19A5ADDB00F54D4C /* Frameworks */,
@@ -200,9 +299,9 @@
 			dependencies = (
 				98866BE319A5ADDB00F54D4C /* PBXTargetDependency */,
 			);
-			name = COLORSV2Tests;
+			name = Colors.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests;
 			productName = COLORSV2Tests;
-			productReference = 98866BDD19A5ADDB00F54D4C /* COLORSV2Tests.xctest */;
+			productReference = 98866BDD19A5ADDB00F54D4C /* Colors.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -211,15 +310,18 @@
 		98866BAA19A5ADDA00F54D4C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Michael Fahey";
 				TargetAttributes = {
+					98866BB119A5ADDA00F54D4C = {
+						DevelopmentTeam = 6T8C89MU48;
+					};
 					98866BDC19A5ADDB00F54D4C = {
 						TestTargetID = 98866BB119A5ADDA00F54D4C;
 					};
 				};
 			};
-			buildConfigurationList = 98866BAD19A5ADDA00F54D4C /* Build configuration list for PBXProject "COLORSV2" */;
+			buildConfigurationList = 98866BAD19A5ADDA00F54D4C /* Build configuration list for PBXProject "Colors" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -232,8 +334,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				98866BB119A5ADDA00F54D4C /* COLORSV2 */,
-				98866BDC19A5ADDB00F54D4C /* COLORSV2Tests */,
+				98866BB119A5ADDA00F54D4C /* Colors.temp_caseinsensitive_rename */,
+				98866BDC19A5ADDB00F54D4C /* Colors.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests */,
 			);
 		};
 /* End PBXProject section */
@@ -243,10 +345,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98866BD619A5ADDA00F54D4C /* Spaceship.png in Resources */,
+				9831F9B419A7113900DF95BA /* soundone.wav in Resources */,
+				9831F9B519A7113900DF95BA /* soundsix.wav in Resources */,
+				9831F9B719A7113900DF95BA /* soundtwo.wav in Resources */,
+				9831F9B619A7113900DF95BA /* soundthree.wav in Resources */,
+				9831F9B219A7113900DF95BA /* soundfive.wav in Resources */,
 				98866BD819A5ADDA00F54D4C /* Images.xcassets in Resources */,
 				98866BCE19A5ADDA00F54D4C /* Main_iPad.storyboard in Resources */,
+				985A8EDD19C139D10083AF9E /* color@2x.png in Resources */,
 				98866BCB19A5ADDA00F54D4C /* Main_iPhone.storyboard in Resources */,
+				98866C0C19A5B98C00F54D4C /* coloripad@2x.png in Resources */,
+				9831F9B319A7113900DF95BA /* soundfour.wav in Resources */,
 				98866BC219A5ADDA00F54D4C /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,7 +376,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				98866BD419A5ADDA00F54D4C /* MyScene.m in Sources */,
+				9863E71A19A6710E008FD7AB /* stealth.m in Sources */,
+				98866BFA19A5AEBF00F54D4C /* squares.m in Sources */,
+				9863E71D19A67122008FD7AB /* shuffle.m in Sources */,
+				98866C0519A5B0C800F54D4C /* highscore.m in Sources */,
+				98866C0219A5B09A00F54D4C /* settings.m in Sources */,
+				9863E71419A670FC008FD7AB /* medium.m in Sources */,
+				9863E71719A67104008FD7AB /* hard.m in Sources */,
+				9863E72019A6712D008FD7AB /* classic.m in Sources */,
 				98866BD119A5ADDA00F54D4C /* ViewController.m in Sources */,
+				98866C0819A5B0F600F54D4C /* levelselect.m in Sources */,
+				98866BFF19A5B01F00F54D4C /* TitleScene.m in Sources */,
 				98866BC819A5ADDA00F54D4C /* AppDelegate.m in Sources */,
 				98866BC419A5ADDA00F54D4C /* main.m in Sources */,
 			);
@@ -286,7 +405,7 @@
 /* Begin PBXTargetDependency section */
 		98866BE319A5ADDB00F54D4C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 98866BB119A5ADDA00F54D4C /* COLORSV2 */;
+			target = 98866BB119A5ADDA00F54D4C /* Colors.temp_caseinsensitive_rename */;
 			targetProxy = 98866BE219A5ADDB00F54D4C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -359,7 +478,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -392,7 +511,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -404,10 +523,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "COLORSV2/COLORSV2-Prefix.pch";
-				INFOPLIST_FILE = "COLORSV2/COLORSV2-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "COLORSV2/Colors.temp_caseinsensitive_rename.temp_caseinsensitive_rename-Prefix.pch";
+				INFOPLIST_FILE = "COLORSV2/Colors.temp_caseinsensitive_rename.temp_caseinsensitive_rename-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = Colors;
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				WRAPPER_EXTENSION = app;
 			};
@@ -418,10 +539,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "COLORSV2/COLORSV2-Prefix.pch";
-				INFOPLIST_FILE = "COLORSV2/COLORSV2-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "COLORSV2/Colors.temp_caseinsensitive_rename.temp_caseinsensitive_rename-Prefix.pch";
+				INFOPLIST_FILE = "COLORSV2/Colors.temp_caseinsensitive_rename.temp_caseinsensitive_rename-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = Colors;
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				WRAPPER_EXTENSION = app;
 			};
@@ -442,8 +565,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "COLORSV2Tests/COLORSV2Tests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "COLORSV2Tests/Colors.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests-Info.plist";
+				PRODUCT_NAME = Colors.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -460,8 +583,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "COLORSV2/COLORSV2-Prefix.pch";
-				INFOPLIST_FILE = "COLORSV2Tests/COLORSV2Tests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "COLORSV2Tests/Colors.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests-Info.plist";
+				PRODUCT_NAME = Colors.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -470,7 +593,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		98866BAD19A5ADDA00F54D4C /* Build configuration list for PBXProject "COLORSV2" */ = {
+		98866BAD19A5ADDA00F54D4C /* Build configuration list for PBXProject "Colors" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				98866BEC19A5ADDB00F54D4C /* Debug */,
@@ -479,21 +602,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		98866BEE19A5ADDB00F54D4C /* Build configuration list for PBXNativeTarget "COLORSV2" */ = {
+		98866BEE19A5ADDB00F54D4C /* Build configuration list for PBXNativeTarget "Colors.temp_caseinsensitive_rename" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				98866BEF19A5ADDB00F54D4C /* Debug */,
 				98866BF019A5ADDB00F54D4C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		98866BF119A5ADDB00F54D4C /* Build configuration list for PBXNativeTarget "COLORSV2Tests" */ = {
+		98866BF119A5ADDB00F54D4C /* Build configuration list for PBXNativeTarget "Colors.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				98866BF219A5ADDB00F54D4C /* Debug */,
 				98866BF319A5ADDB00F54D4C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

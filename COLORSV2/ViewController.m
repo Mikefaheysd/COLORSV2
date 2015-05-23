@@ -7,45 +7,65 @@
 //
 
 #import "ViewController.h"
-#import "MyScene.h"
 
 @implementation ViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad{
     [super viewDidLoad];
-
     // Configure the view.
     SKView * skView = (SKView *)self.view;
-    skView.showsFPS = YES;
-    skView.showsNodeCount = YES;
+    //Add view controller as observer
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleNotification:) name:@"hideAd" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleNotification:) name:@"showAd" object:nil];
     
     // Create and configure the scene.
-    SKScene * scene = [MyScene sceneWithSize:skView.bounds.size];
+    SKScene * scene = [TitleScene sceneWithSize:skView.bounds.size];
     scene.scaleMode = SKSceneScaleModeAspectFill;
-    
-    // Present the scene.
+    adView = [[ADBannerView alloc] initWithFrame:CGRectZero];
+    adView = [[ADBannerView alloc] initWithFrame:CGRectZero];
+    adView.frame = CGRectOffset(adView.frame, 0, 0.0f);
+    adView.delegate=self;
+    [self.view addSubview:adView];
+    self.canDisplayBannerAds=NO;
+    // Present the scene.*/
     [skView presentScene:scene];
 }
 
-- (BOOL)shouldAutorotate
-{
-    return YES;
+-(void)hidesBanner {
+    [adView setAlpha:0];
+    self.canDisplayBannerAds = NO;
 }
 
-- (NSUInteger)supportedInterfaceOrientations
-{
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        return UIInterfaceOrientationMaskAllButUpsideDown;
-    } else {
-        return UIInterfaceOrientationMaskAll;
+-(void)showsBanner {
+    [adView setAlpha:1];
+    self.canDisplayBannerAds = YES;
+    
+}
+
+- (void)handleNotification:(NSNotification *)notification{
+    if ([notification.name isEqualToString:@"hideAd"]) {
+        [self hidesBanner];
+    }else if ([notification.name isEqualToString:@"showAd"]) {
+        [self showsBanner];
     }
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (BOOL)shouldAutorotate{
+    return NO;
+}
+
+- (NSUInteger)supportedInterfaceOrientations{
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone)
+        return UIInterfaceOrientationMaskAllButUpsideDown;
+    return UIInterfaceOrientationMaskAll;
+}
+
+- (void)didReceiveMemoryWarning{
     [super didReceiveMemoryWarning];
     // Release any cached data, images, etc that aren't in use.
 }
 
+- (BOOL)prefersStatusBarHidden {
+    return YES;
+}
 @end

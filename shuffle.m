@@ -1,31 +1,22 @@
 //
-//  MyScene.m
+//  shuffle.m
 //  COLORSV2
 //
-//  Created by Michael Fahey on 8/20/14.
+//  Created by Michael Fahey on 8/21/14.
 //  Copyright (c) 2014 Michael Fahey. All rights reserved.
 //
 
-#import "MyScene.h"
+#import "shuffle.h"
 
-@interface MyScene(Private)
--(void)continueSequence;
--(void)nextInSequence:(NSInteger)seqNum;
--(void)rearrangeshapes;
-@end
-
-@implementation MyScene
-
+@implementation shuffle
 @synthesize sequence, userTurn, userSeqStep, gameOver;
-
 -(id)initWithSize:(CGSize)size {
-    //NSLog(@"init");
     if (self = [super initWithSize:size]) {
+        /*Setup your scene here */
         [[NSNotificationCenter defaultCenter] postNotificationName:@"showAd" object:nil]; //Sends message to show ad.
         NSUserDefaults* defaults  = [NSUserDefaults standardUserDefaults];
         sound = [defaults boolForKey: K_SWITCH_KEY];
-        tmp = [[NSUserDefaults standardUserDefaults] integerForKey:@"easy highscore"];
-        /*Setup your scene here */
+        tmp = [[NSUserDefaults standardUserDefaults] integerForKey:@"shuffle highscore"];
         CGRect screenBounds = [[UIScreen mainScreen] bounds];
         _background = [SKSpriteNode spriteNodeWithImageNamed:@"color@2x.png"];
         [_background setName:@"background"];
@@ -85,6 +76,7 @@
                         button.strokeColor  = [UIColor blueColor];
                         break;
                 }
+                NSLog(@"Adding button at: (%f,%f)", button.position.x, button.position.y);
                 [self addChild:button];
                 for(SKNode *node in self.children){
                     if([node.name isEqualToString:@"button"]){
@@ -156,6 +148,7 @@
                         button.strokeColor  = [UIColor blueColor];
                         break;
                 }
+                NSLog(@"Adding button at: (%f,%f)", button.position.x, button.position.y);
                 [self addChild:button];
                 for(SKNode *node in self.children){
                     if([node.name isEqualToString:@"button"]){
@@ -226,6 +219,7 @@
                         button.strokeColor  = [UIColor blackColor];
                         break;
                 }
+                NSLog(@"Adding button at: (%f,%f)", button.position.x, button.position.y);
                 [self addChild:button];
                 for(SKNode *node in self.children){
                     if([node.name isEqualToString:@"button"]){
@@ -249,6 +243,7 @@
         userTurn = NO;
         userSeqStep = 0;
         gameOver = NO;
+        
     }
     return self;
 }
@@ -304,6 +299,7 @@
                 [self continueSequence];
             }else{
                 userSeqStep++;
+                [self rearrangeshapes];
                 [gameTimer invalidate];
                 gameTimer = [NSTimer scheduledTimerWithTimeInterval:timerLength target:self selector:@selector(timerFired:) userInfo:nil repeats:NO];
             }
@@ -318,14 +314,13 @@
     [[UIApplication sharedApplication] beginIgnoringInteractionEvents];
     int newSeq = arc4random_uniform(6);
     NSNumber *newSeqMask = [NSNumber numberWithInt:(1 << newSeq)];
+    NSLog(@"Adding sequence mask %@", newSeqMask);
     [sequence addObject:newSeqMask];
-    if (([sequence count ]-1) % 3 == 0 && ([sequence count]-1)!=0) {
-        [self rearrangeshapes];
-    }
     SKAction *wait = [SKAction waitForDuration:1.0];
     [self runAction:wait completion:^(void){
         [self nextInSequence:0];
     }];
+    
 }
 
 -(void)nextInSequence:(NSInteger)seqNum{
@@ -333,9 +328,6 @@
         NSNumber *nextNum = [sequence objectAtIndex:seqNum];
         int nextSeqMask = [nextNum intValue];
         for(SKNode *node in self.children){
-            if ([node.name isEqualToString:@"background"]) {
-                continue;
-            }
             if([node.name isEqualToString:@"button"]){
                 squares *button = (squares*)node;
                 if((button.positionBitMask & nextSeqMask) != 0){
@@ -402,7 +394,7 @@
                         button.position = p;
                         break;
                 }
-                SKAction *moveBottomLeft = [SKAction moveTo:button.position duration:1];
+                SKAction *moveBottomLeft = [SKAction moveTo:button.position duration:.5];
                 [button runAction:moveBottomLeft];
                 i++;
             }
@@ -421,7 +413,7 @@
     // Invalidate the timer
     [gameTimer invalidate];
     if (sequence.count-1 > tmp)
-        [[NSUserDefaults standardUserDefaults] setInteger:sequence.count-1 forKey:@"easy highscore"];
+        [[NSUserDefaults standardUserDefaults] setInteger:sequence.count-1 forKey:@"shuffle highscore"];
     //Show an alert with the results
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Game Over" message:message delegate:self cancelButtonTitle:@"EXIT"otherButtonTitles:@"TRY AGAIN", nil];
     [alert show];
@@ -429,9 +421,10 @@
 
 // Alert view delegate method
 - (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex{
-    timerLength = 3.0;
+    //[gameTimer invalidate];
+    // NSLog(@"in alert");
+    timerLength = 2.0;
     if (buttonIndex == 0) {
-        NSLog(@"EXITED");
         SKScene *myScene = [[TitleScene alloc] initWithSize:self.size];
         [self.view presentScene:myScene transition:NULL];
     }else{

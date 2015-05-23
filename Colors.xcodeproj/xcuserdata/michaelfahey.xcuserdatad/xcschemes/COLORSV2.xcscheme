@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0510"
+   LastUpgradeVersion = "0630"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "98866BB119A5ADDA00F54D4C"
-               BuildableName = "COLORSV2.app"
-               BlueprintName = "COLORSV2"
-               ReferencedContainer = "container:COLORSV2.xcodeproj">
+               BuildableName = "Colors.app"
+               BlueprintName = "Colors.temp_caseinsensitive_rename"
+               ReferencedContainer = "container:Colors.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "98866BDC19A5ADDB00F54D4C"
-               BuildableName = "COLORSV2Tests.xctest"
-               BlueprintName = "COLORSV2Tests"
-               ReferencedContainer = "container:COLORSV2.xcodeproj">
+               BuildableName = "Colors.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests.xctest"
+               BlueprintName = "Colors.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests"
+               ReferencedContainer = "container:Colors.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "98866BB119A5ADDA00F54D4C"
-            BuildableName = "COLORSV2.app"
-            BlueprintName = "COLORSV2"
-            ReferencedContainer = "container:COLORSV2.xcodeproj">
+            BuildableName = "Colors.app"
+            BlueprintName = "Colors.temp_caseinsensitive_rename"
+            ReferencedContainer = "container:Colors.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -58,13 +58,14 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "98866BB119A5ADDA00F54D4C"
-            BuildableName = "COLORSV2.app"
-            BlueprintName = "COLORSV2"
-            ReferencedContainer = "container:COLORSV2.xcodeproj">
+            BuildableName = "Colors.app"
+            BlueprintName = "Colors.temp_caseinsensitive_rename"
+            ReferencedContainer = "container:Colors.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -76,13 +77,14 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "98866BB119A5ADDA00F54D4C"
-            BuildableName = "COLORSV2.app"
-            BlueprintName = "COLORSV2"
-            ReferencedContainer = "container:COLORSV2.xcodeproj">
+            BuildableName = "Colors.app"
+            BlueprintName = "Colors.temp_caseinsensitive_rename"
+            ReferencedContainer = "container:Colors.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
