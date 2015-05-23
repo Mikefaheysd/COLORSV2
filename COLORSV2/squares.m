@@ -11,10 +11,8 @@
 @implementation squares
 @synthesize positionBitMask;
 
--(id)initWithPosition:(int)position inSize:(CGSize)size
-{
-    if((self = [super init]))
-    {
+-(id)initWithPosition:(int)position inSize:(CGSize)size{
+    if((self = [super init])){
         CGRect screenBounds = [[UIScreen mainScreen] bounds];
         CGRect box;
         if(screenBounds.size.height == 568) {
@@ -28,7 +26,6 @@
         self.lineWidth = 1;
         self.glowWidth = 0.0;
         self.strokeColor = [UIColor blackColor];
-        
         self.name = @"button";
         self.positionBitMask = 1 << position;
         if(sound == YES){
@@ -40,7 +37,6 @@
             noise[32]=@"soundone";
         }
     }
-   
     return self;
 }
 

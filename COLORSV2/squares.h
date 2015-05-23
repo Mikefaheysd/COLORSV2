@@ -10,6 +10,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import <AudioToolbox/AudioToolbox.h>
 #define K_SWITCH_KEY @"switch_key"
+
 int difficulty;
 long tmp;
 bool sound;
@@ -24,9 +25,8 @@ NSInteger classichighscore;
 NSInteger totalhighscore;
 NSString *noise[33];
 SystemSoundID soundFileObject;
-@interface squares : SKShapeNode{
+@interface squares : SKShapeNode
 
-}
 @property (nonatomic) int positionBitMask;
 
 -(id)initWithPosition:(int)position inSize:(CGSize)size;
