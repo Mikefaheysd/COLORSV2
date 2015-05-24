@@ -19,7 +19,6 @@
 @synthesize sequence, userTurn, userSeqStep, gameOver;
 
 -(id)initWithSize:(CGSize)size {
-    //NSLog(@"init");
     if (self = [super initWithSize:size]) {
         [[NSNotificationCenter defaultCenter] postNotificationName:@"showAd" object:nil]; //Sends message to show ad.
         NSUserDefaults* defaults  = [NSUserDefaults standardUserDefaults];

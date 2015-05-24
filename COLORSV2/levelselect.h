@@ -15,6 +15,7 @@
 #import "stealth.h"
 #import "shuffle.h"
 #import "classic.h"
+@import SpriteKit;
 
 @interface levelselect : SKScene{
     NSMutableArray *points;

@@ -33,19 +33,11 @@
         totalhighscore=easyhighscore+medhighscore+hardhighscore+stealthhighscore+shufflehighscore;
         /*Setup your scene here */
         CGRect screenBounds = [[UIScreen mainScreen] bounds];
-       // if (screenBounds.size.height == 568||screenBounds.size.height==480) {
         _background = [SKSpriteNode spriteNodeWithImageNamed:@"color@2x.png"];
         [_background setName:@"background"];
         _background.size=self.frame.size;
         _background.position = (CGPoint) {self.frame.size.width*.5, self.frame.size.height*.5};
         [self addChild:_background];
-        /*}else{
-            _background = [SKSpriteNode spriteNodeWithImageNamed:@"coloripad@2x.png"];
-            [_background setName:@"background"];
-            _background.size=self.frame.size;
-            _background.position = (CGPoint) {self.frame.size.width*.5, self.frame.size.height*.5};
-            [self addChild:_background];
-        *///}
         if (screenBounds.size.height == 568) {
             points = [NSMutableArray arrayWithObjects:
                       [NSValue valueWithCGPoint:CGPointMake(10, 40)],//bottom left
@@ -88,10 +80,8 @@
                 }
                 NSLog(@"Adding button at: (%f,%f)", button.position.x, button.position.y);
                 [self addChild:button];
-                for(SKNode *node in self.children)
-                {
-                    if([node.name isEqualToString:@"button"])
-                    {
+                for(SKNode *node in self.children){
+                    if([node.name isEqualToString:@"button"]){
                         SKAction *shrink = [SKAction customActionWithDuration:0.25 actionBlock:^(SKNode *node, CGFloat elapsedTime){
                             button.strokeColor=[UIColor blackColor];
                             button.glowWidth = 0;
@@ -144,10 +134,8 @@
                 }
                 NSLog(@"Adding button at: (%f,%f)", button.position.x, button.position.y);
                 [self addChild:button];
-                for(SKNode *node in self.children)
-                {
-                    if([node.name isEqualToString:@"button"])
-                    {
+                for(SKNode *node in self.children){
+                    if([node.name isEqualToString:@"button"]){
                         SKAction *shrink = [SKAction customActionWithDuration:0.25 actionBlock:^(SKNode *node, CGFloat elapsedTime){
                             button.strokeColor=[UIColor blackColor];
                             button.glowWidth = 0;
@@ -199,10 +187,8 @@
                 }
                 NSLog(@"Adding button at: (%f,%f)", button.position.x, button.position.y);
                 [self addChild:button];
-                for(SKNode *node in self.children)
-                {
-                    if([node.name isEqualToString:@"button"])
-                    {
+                for(SKNode *node in self.children){
+                    if([node.name isEqualToString:@"button"]){
                         SKAction *shrink = [SKAction customActionWithDuration:0.25 actionBlock:^(SKNode *node, CGFloat elapsedTime){
                             button.strokeColor=[UIColor blackColor];
                             button.glowWidth = 0;
@@ -222,7 +208,6 @@
     UITouch *touch = [touches anyObject];
     CGPoint location = [touch locationInNode:self];
     SKNode *node = [self nodeAtPoint:location];
-    
     if ([node.name isEqualToString:@"backbutton"]) {
         SKScene *myScene = [[TitleScene alloc] initWithSize:self.size];
         [self.view presentScene:myScene transition:NULL];
@@ -298,6 +283,7 @@
         easy.text = @"EASY";
         easy.position = CGPointMake(self.frame.size.width*.25, self.frame.size.height*0.73);
         easy.fontColor =  [UIColor yellowColor];
+        easy.zPosition=1;
         [self addChild:easy];
         //med
         SKLabelNode *med = [SKLabelNode labelNodeWithFontNamed:@"Marker Felt"];
@@ -306,6 +292,7 @@
         med.text = @"MEDIUM";
         med.position = CGPointMake(self.frame.size.width*.75, self.frame.size.height*0.73);
         med.fontColor =  [UIColor cyanColor];
+        med.zPosition=1;
         [self addChild:med];
         //hard
         SKLabelNode *hard = [SKLabelNode labelNodeWithFontNamed:@"Marker Felt"];
@@ -314,6 +301,7 @@
         hard.text = @"HARD";
         hard.position = CGPointMake(self.frame.size.width*.25, self.frame.size.height*0.45);
         hard.fontColor =  [UIColor redColor];
+        hard.zPosition=1;
         [self addChild:hard];
         //stealth
         SKLabelNode *stealth = [SKLabelNode labelNodeWithFontNamed:@"Marker Felt"];
@@ -322,6 +310,7 @@
         stealth.text = @"STEALTH";
         stealth.position = CGPointMake(self.frame.size.width*.75, self.frame.size.height*0.45);
         stealth.fontColor =  [UIColor magentaColor];
+        stealth.zPosition=1;
         [self addChild:stealth];
         //shuffle
         SKLabelNode *shuffle = [SKLabelNode labelNodeWithFontNamed:@"Marker Felt"];
@@ -330,6 +319,7 @@
         shuffle.text = @"SHUFFLE";
         shuffle.position = CGPointMake(self.frame.size.width*.25, self.frame.size.height*0.18);
         shuffle.fontColor =  [UIColor blueColor];
+        shuffle.zPosition=1;
         [self addChild:shuffle];
         //clasic
         SKLabelNode *classic = [SKLabelNode labelNodeWithFontNamed:@"Marker Felt"];
@@ -338,6 +328,7 @@
         classic.text = @"CLASSIC";
         classic.position = CGPointMake(self.frame.size.width*.75, self.frame.size.height*0.18);
         classic.fontColor =  [UIColor greenColor];
+        classic.zPosition=1;
         [self addChild:classic];
     }else if (size==1){
         SKLabelNode *score = [SKLabelNode labelNodeWithFontNamed:@"Marker Felt"];
@@ -364,6 +355,7 @@
         easy.text = @"EASY";
         easy.position = CGPointMake(self.frame.size.width*.25, self.frame.size.height*0.73);
         easy.fontColor =  [UIColor yellowColor];
+        easy.zPosition=1;
         [self addChild:easy];
         //med
         SKLabelNode *med = [SKLabelNode labelNodeWithFontNamed:@"Marker Felt"];
@@ -372,6 +364,7 @@
         med.text = @"MEDIUM";
         med.position = CGPointMake(self.frame.size.width*.75, self.frame.size.height*0.73);
         med.fontColor =  [UIColor cyanColor];
+        med.zPosition=1;
         [self addChild:med];
         //hard
         SKLabelNode *hard = [SKLabelNode labelNodeWithFontNamed:@"Marker Felt"];
@@ -380,6 +373,7 @@
         hard.text = @"HARD";
         hard.position = CGPointMake(self.frame.size.width*.25, self.frame.size.height*0.45);
         hard.fontColor =  [UIColor redColor];
+        hard.zPosition=1;
         [self addChild:hard];
         //stealth
         SKLabelNode *stealth = [SKLabelNode labelNodeWithFontNamed:@"Marker Felt"];
@@ -388,6 +382,7 @@
         stealth.text = @"STEALTH";
         stealth.position = CGPointMake(self.frame.size.width*.75, self.frame.size.height*0.45);
         stealth.fontColor =  [UIColor magentaColor];
+        stealth.zPosition=1;
         [self addChild:stealth];
         //shuffle
         SKLabelNode *shuffle = [SKLabelNode labelNodeWithFontNamed:@"Marker Felt"];
@@ -396,6 +391,7 @@
         shuffle.text = @"SHUFFLE";
         shuffle.position = CGPointMake(self.frame.size.width*.25, self.frame.size.height*0.18);
         shuffle.fontColor =  [UIColor blueColor];
+        shuffle.zPosition=1;
         [self addChild:shuffle];
         //clasic
         SKLabelNode *classic = [SKLabelNode labelNodeWithFontNamed:@"Marker Felt"];
@@ -404,6 +400,7 @@
         classic.text = @"CLASSIC";
         classic.position = CGPointMake(self.frame.size.width*.75, self.frame.size.height*0.18);
         classic.fontColor =  [UIColor greenColor];
+        classic.zPosition=1;
         [self addChild:classic];
     }else{
         SKLabelNode *score = [SKLabelNode labelNodeWithFontNamed:@"Marker Felt"];
@@ -411,6 +408,7 @@
         score.text = @"LEVEL SELECT";
         score.position = CGPointMake(self.frame.size.width*.5, self.frame.size.height*0.0065);
         score.fontColor =  [UIColor blackColor];
+        score.userInteractionEnabled= NO;
         score.name = @"scoreLabel";
         [self addChild:score];
         //add back
@@ -430,6 +428,7 @@
         easy.text = @"EASY";
         easy.position = CGPointMake(self.frame.size.width*.25, self.frame.size.height*0.75);
         easy.fontColor =  [UIColor yellowColor];
+        easy.zPosition=1;
         [self addChild:easy];
         //med
         SKLabelNode *med = [SKLabelNode labelNodeWithFontNamed:@"Marker Felt"];
@@ -438,6 +437,7 @@
         med.text = @"MEDIUM";
         med.position = CGPointMake(self.frame.size.width*.75, self.frame.size.height*0.75);
         med.fontColor =  [UIColor cyanColor];
+        med.zPosition=1;
         [self addChild:med];
         //hard
         SKLabelNode *hard = [SKLabelNode labelNodeWithFontNamed:@"Marker Felt"];
@@ -446,6 +446,7 @@
         hard.text = @"HARD";
         hard.position = CGPointMake(self.frame.size.width*.25, self.frame.size.height*0.45);
         hard.fontColor =  [UIColor redColor];
+        hard.zPosition=1;
         [self addChild:hard];
         //stealth
         SKLabelNode *stealth = [SKLabelNode labelNodeWithFontNamed:@"Marker Felt"];
@@ -454,6 +455,7 @@
         stealth.text = @"STEALTH";
         stealth.position = CGPointMake(self.frame.size.width*.75, self.frame.size.height*0.45);
         stealth.fontColor =  [UIColor magentaColor];
+        stealth.zPosition=1;
         [self addChild:stealth];
         //shuffle
         SKLabelNode *shuffle = [SKLabelNode labelNodeWithFontNamed:@"Marker Felt"];
@@ -462,6 +464,7 @@
         shuffle.text = @"SHUFFLE";
         shuffle.position = CGPointMake(self.frame.size.width*.25, self.frame.size.height*0.15);
         shuffle.fontColor =  [UIColor blueColor];
+        shuffle.zPosition=1;
         [self addChild:shuffle];
         //clasic
         SKLabelNode *classic = [SKLabelNode labelNodeWithFontNamed:@"Marker Felt"];
@@ -470,8 +473,10 @@
         classic.text = @"CLASSIC";
         classic.position = CGPointMake(self.frame.size.width*.75, self.frame.size.height*0.15);
         classic.fontColor =  [UIColor greenColor];
+        classic.zPosition=1;
         [self addChild:classic];
     }
+    return;
 }
 
 -(void)soundoff:(NSString*) message{

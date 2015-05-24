@@ -28,14 +28,14 @@
         self.strokeColor = [UIColor blackColor];
         self.name = @"button";
         self.positionBitMask = 1 << position;
-        if(sound == YES){
+        //if(sound == YES){
             noise[1]=@"soundtwo";
             noise[2]=@"soundfour";
             noise[4]=@"soundsix";
             noise[8]=@"soundfive";
             noise[16]=@"soundthree";
             noise[32]=@"soundone";
-        }
+        //}
     }
     return self;
 }
