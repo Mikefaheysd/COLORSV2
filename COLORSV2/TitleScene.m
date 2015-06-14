@@ -52,13 +52,13 @@
     
      if ([node.name isEqualToString:@"startbutton"]) {
         SKScene *myScene = [[levelselect alloc] initWithSize:self.size];
-        [self.view presentScene:myScene transition:NULL];
+        [self.view presentScene:myScene];
     }else  if ([node.name isEqualToString:@"setting"]) {
         SKScene *myScene = [[settings alloc] initWithSize:self.size];
-        [self.view presentScene:myScene transition:NULL];
+        [self.view presentScene:myScene];
     }else if([node.name isEqualToString:@"highscore"]){
         SKScene *myScene = [[highscore alloc] initWithSize:self.size];
-        [self.view presentScene:myScene transition:NULL];
+        [self.view presentScene:myScene];
     }else{
         return;
     }

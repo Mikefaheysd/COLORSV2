@@ -383,7 +383,7 @@
     timerLength = 3.0;
     if (buttonIndex == 0) {
         SKScene *myScene = [[TitleScene alloc] initWithSize:self.size];
-        [self.view presentScene:myScene transition:NULL];
+        [self.view presentScene:myScene];
     }else{
         NSLog(@"Restarting game...");
         userTurn = NO;

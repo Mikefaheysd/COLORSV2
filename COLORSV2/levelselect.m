@@ -210,16 +210,16 @@
     SKNode *node = [self nodeAtPoint:location];
     if ([node.name isEqualToString:@"backbutton"]) {
         SKScene *myScene = [[TitleScene alloc] initWithSize:self.size];
-        [self.view presentScene:myScene transition:NULL];
+        [self.view presentScene:myScene];
     }else if ([node.name isEqualToString:@"easy"]){
         SKScene *myScene = [[MyScene alloc] initWithSize:self.size];
-        [self.view presentScene:myScene transition:NULL];
+        [self.view presentScene:myScene];
     }else if ([node.name isEqualToString:@"med"]){
         SKScene *myScene = [[medium alloc] initWithSize:self.size];
-        [self.view presentScene:myScene transition:NULL];
+        [self.view presentScene:myScene];
     }else if ([node.name isEqualToString:@"hard"]){
         SKScene *myScene = [[hard alloc] initWithSize:self.size];
-        [self.view presentScene:myScene transition:NULL];
+        [self.view presentScene:myScene];
     }else if ([node.name isEqualToString:@"stealth"]){
         if (easyhighscore<10 && medhighscore<10 && hardhighscore<10) {
             [self displaymessage:@"Reach level 10 on any difficulty to unlock"];
@@ -230,7 +230,7 @@
            return;
        }else{
            SKScene *myScene = [[stealth alloc] initWithSize:self.size];
-           [self.view presentScene:myScene transition:NULL];
+           [self.view presentScene:myScene];
        }
     }else if ([node.name isEqualToString:@"shuffle"]){
         if (hardhighscore<10) {
@@ -238,14 +238,14 @@
             return;
         }
         SKScene *myScene = [[shuffle alloc] initWithSize:self.size];
-        [self.view presentScene:myScene transition:NULL];
+        [self.view presentScene:myScene];
     }else if ([node.name isEqualToString:@"classic"]){
         if (totalhighscore<50) {
             [self displaymessage:@"Reach a total level of 50 to unlock"];
             return;
         }
         SKScene *myScene = [[classic alloc] initWithSize:self.size];
-        [self.view presentScene:myScene transition:NULL];
+        [self.view presentScene:myScene];
     }else{
         return;
     }
@@ -498,7 +498,7 @@
         [defaults setBool: sound forKey: K_SWITCH_KEY];
         [defaults synchronize];
         SKScene *myScene = [[stealth alloc] initWithSize:self.size];
-        [self.view presentScene:myScene transition:NULL];
+        [self.view presentScene:myScene];
     }
 }
 @end

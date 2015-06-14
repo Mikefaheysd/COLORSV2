@@ -112,7 +112,7 @@
     SKNode *node = [self nodeAtPoint:location];
     if ([node.name isEqualToString:@"backbutton"]) {
         SKScene *myScene = [[TitleScene alloc] initWithSize:self.size];
-        [self.view presentScene:myScene transition:NULL];
+        [self.view presentScene:myScene];
     }else{
         return;
     }

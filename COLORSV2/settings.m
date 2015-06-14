@@ -53,7 +53,7 @@
     SKLabelNode *version = [SKLabelNode labelNodeWithFontNamed:@"Marker Felt"];
     version.name = @"version";//how the node is identified later
     [version setFontSize:self.frame.size.width*0.05];
-    version.text = @"Version: 2.1";
+    version.text = @"Version: 2.2";
     version.position = CGPointMake(self.frame.size.width*.5, self.frame.size.height*.01);
     version.fontColor =  [UIColor blackColor];
     [self addChild:version];
@@ -69,7 +69,7 @@
     if ([node.name isEqualToString:@"backbutton"]) {
         switch1.hidden=YES;
         SKScene *myScene = [[TitleScene alloc] initWithSize:self.size];
-        [self.view presentScene:myScene transition:NULL];
+        [self.view presentScene:myScene];
     }else if ([node.name isEqualToString:@"rate"]){
         [[UIApplication sharedApplication] openURL: [NSURL URLWithString:@"https://itunes.apple.com/us/app/colors-tile-match/id905220060?ls=1&mt=8"]];
     }else{

@@ -310,7 +310,7 @@
 		98866BAA19A5ADDA00F54D4C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Michael Fahey";
 				TargetAttributes = {
 					98866BB119A5ADDA00F54D4C = {
@@ -464,6 +464,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -528,6 +529,7 @@
 				GCC_PREFIX_HEADER = "COLORSV2/Colors.temp_caseinsensitive_rename.temp_caseinsensitive_rename-Prefix.pch";
 				INFOPLIST_FILE = "COLORSV2/Colors.temp_caseinsensitive_rename.temp_caseinsensitive_rename-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.michaelfahey.colors;
 				PRODUCT_NAME = Colors;
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				WRAPPER_EXTENSION = app;
@@ -544,6 +546,7 @@
 				GCC_PREFIX_HEADER = "COLORSV2/Colors.temp_caseinsensitive_rename.temp_caseinsensitive_rename-Prefix.pch";
 				INFOPLIST_FILE = "COLORSV2/Colors.temp_caseinsensitive_rename.temp_caseinsensitive_rename-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.michaelfahey.colors;
 				PRODUCT_NAME = Colors;
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				WRAPPER_EXTENSION = app;
@@ -566,6 +569,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "COLORSV2Tests/Colors.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "MichaelFahey.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Colors.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -584,6 +588,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "COLORSV2/COLORSV2-Prefix.pch";
 				INFOPLIST_FILE = "COLORSV2Tests/Colors.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "MichaelFahey.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Colors.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
